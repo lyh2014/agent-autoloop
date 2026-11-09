@@ -1,0 +1,6 @@
+{
+  "name": "agent-autoloop",
+  "description": "Agent 自动化中台：只收、只分、只派、只记，让 Agent 自动跟进工作并在需要时由你定夺。",
+  "permissions": [],
+  "capabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

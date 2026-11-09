@@ -12,6 +12,8 @@
     "types": ["node"]
   },
   "include": [
+    "server.ts",
+    "console.ts",
     "bin",
     "host",
     "plugins",

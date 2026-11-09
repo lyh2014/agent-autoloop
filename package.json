@@ -9,12 +9,16 @@
   "private": true,
   "type": "module",
   "engines": {
-    "node": ">=24"
+    "node": ">=22"
   },
   "bin": {
     "agent-autoloop": "bin/agent-autoloop.ts"
   },
   "scripts": {
+    "dev": "node --disable-warning=ExperimentalWarning server.ts",
+    "build": "npm run typecheck",
+    "start": "node --disable-warning=ExperimentalWarning server.ts",
+    "lint": "npm run format:check",
     "test": "node --disable-warning=ExperimentalWarning --test tests/*.test.ts",
     "test:quick": "node --disable-warning=ExperimentalWarning --test \"tests/!(simulation).test.ts\"",
     "typecheck": "tsc -p .",
